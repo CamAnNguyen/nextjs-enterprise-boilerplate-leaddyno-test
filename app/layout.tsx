@@ -1,17 +1,16 @@
-import "styles/tailwind.css"
+'use client'
+
+import 'styles/tailwind.css'
+import LeadDynoScript from '../components/LeadDynoScript';
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <header>
-        <script type="text/javascript" src="https://static.leaddyno.com/js"></script>
-        <script>
-          LeadDyno.key = "1436ca19da13ab3551eb17ecaf4994bba34819e0"
-          LeadDyno.recordVisit();
-          LeadDyno.autoWatch();
-        </script>
-      </header>
+      <head>
+        <LeadDynoScript />
+      </head>
       <body>{children}</body>
-    </html>
+    </html >
   )
 }
