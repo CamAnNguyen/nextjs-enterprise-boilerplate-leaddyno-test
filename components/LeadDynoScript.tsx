@@ -9,6 +9,7 @@ export default function LeadDynoScript() {
       onLoad={() => {
         const w = window as any;
         if (w.LeadDyno) {
+          w.LeadDyno.setServerUrl('https://collector-prod01.cloud.leaddyno.com/')
           w.LeadDyno.key = "1436ca19da13ab3551eb17ecaf4994bba34819e0";
           w.LeadDyno.recordVisit();
           w.LeadDyno.autoWatch();
