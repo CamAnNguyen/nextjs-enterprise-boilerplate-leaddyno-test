@@ -10,7 +10,7 @@ export default function LeadDynoScript() {
         const w = window as any;
         if (w.LeadDyno) {
           w.LeadDyno.setServerUrl('https://collector-prod01.cloud.leaddyno.com/')
-          w.LeadDyno.key = "1436ca19da13ab3551eb17ecaf4994bba34819e0";
+          w.LeadDyno.key = "a091aaa2dc11038f6f1824d1078ab6548b1c3f06";
           w.LeadDyno.recordVisit();
           w.LeadDyno.autoWatch();
         }
